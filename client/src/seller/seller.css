@@ -1,0 +1,21 @@
+.view__left {
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.view__right {
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+.bg-black {
+    background-color: black;
+    z-index: 5;
+}

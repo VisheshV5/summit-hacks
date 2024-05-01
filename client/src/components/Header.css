@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  background-color: white;
+  /* border-bottom: 0.5px solid lightgray; */
+  width: 100vw;
+  padding: 20px;
+  flex-wrap: wrap;
+  z-index: 999;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  background-color: #74e39b88;
+}
+
+
+.header_right {
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.signUp-btn {
+  background-color: rgb(232, 18, 121);
+  color: white;
+  border-color: white;
+  transition: all 0.5s ease-in;
+  border-radius: 999px;
+  width: 150px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.signUp-btn:hover {
+  color: white;
+  background-color: rgb(179, 12, 120);
+  border-color: rgb(179, 12, 120);
+}
+.signUp-btn:focus {
+  color: white;
+  background-color: rgb(179, 12, 120);
+  border-color: blue;
+}
+
+.logo-img {
+  width: 100px;
+  object-fit: contain;
+}
+
+.menu-icon {
+  /* Hide the menu icon on larger screens */
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 10px; /* Reduce the padding on smaller screens */
+  }
+
+  .menu-icon {
+    display: flex; /* Show the menu icon on smaller screens */
+    margin-right: 10px;
+  }
+
+  .pages {
+    flex-basis: 100%; /* Take full width on smaller screens */
+  }
+
+  .header_right {
+    /* Adjust the alignment of right elements */
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+}
+
+
+.cardAnalytics {
+  box-shadow: 0 0 5px 0 gray;
+  border-width: 0;
+}

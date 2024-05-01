@@ -1,0 +1,17 @@
+.AItext {
+  font-size: 18px;
+  background: -webkit-linear-gradient(
+    360deg,
+    rgb(182, 243, 159) 0%,
+    rgba(131, 212, 117, 1) 35%,
+    rgba(46, 182, 44, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.selected {
+  font-size: 18px;
+  color: white;
+}

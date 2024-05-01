@@ -1,0 +1,258 @@
+.calendar {
+  border-radius: 6px;
+  padding: 10px;
+  padding-right: 20px;
+  background-color: #2f2f2f;
+}
+
+.calendar .rbc-toolbar {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f2f2f;
+  border-radius: 6px 6px 0 0;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.calendar .rbc-day-bg.rbc-off-range-bg {
+  background-color: #747474;
+}
+
+.calendar .rbc-toolbar button {
+  font-family: "Poppins";
+  background-color: white;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.calendar .rbc-toolbar button:hover {
+  color: lightgray;
+}
+
+.calendar .rbc-toolbar button:focus {
+  color: lightgray;
+}
+
+.calendar .rbc-toolbar button:disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  box-shadow: none;
+}
+
+.calendar .rbc-header {
+  font-weight: 600;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+button.rbc-button-link.rbc-show-more {
+  background-color: inherit;
+  font-size: 80%;
+  color: white;
+}
+
+div.rbc-event.rbc-event-allday.rbc-event-continues-prior,
+div.rbc-event.rbc-event-continues-prior {
+  border-left: 0px solid white;
+}
+
+div.rbc-event.rbc-event-allday.rbc-event-continues-after,
+div.rbc-event.rbc-event-continues-after, div.rbc-event.rbc-event-allday.rbc-event-continues-prior,
+div.rbc-event.rbc-event-continues-prior {
+  background-color: #2f2f2f;
+  border-radius: 2;
+  color: white;
+  border-left: 4px solid white;
+  margin-left: -1px;
+  font-size: 12px;
+  padding: 10px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  text-decoration: none;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+div.rbc-overlay {
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+div.rbc-overlay-header {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.calendar .rbc-toolbar .rbc-btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.calendar .rbc-btn-group button {
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.calendar .rbc-btn-group button:hover {
+  color: #0039a6;
+}
+
+.calendar .rbc-today {
+  background-color: #393939;
+  font-size: 12px;
+  color: white;
+}
+
+.calendar .rbc-toolbar .rbc-datepicker {
+  display: flex;
+  align-items: center;
+}
+
+.calendar .rbc-toolbar .rbc-datepicker-button {
+  background-color: white;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.calendar .rbc-toolbar .rbc-datepicker-button:hover {
+  background-color: #0039a6;
+}
+
+.calendar .rbc-button-link {
+  font-family: "Poppins";
+}
+
+.calendar .rbc-toolbar .rbc-toolbar-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.calendar .rbc-date-cell {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.calendar .rbc-month-view {
+  border: 1px solid lightgray;
+}
+
+.calendar .rbc-month-view {
+  border: none;
+}
+
+.calendar .rbc-day-bg  {
+  border: 1px solid lightgray;
+}
+
+.calendar .rbc-date-cell > a {
+  font-size: 10px;
+}
+
+.calendar .rbc-event {
+  background-color: #e8effa;
+  border-radius: 2;
+  color: white;
+  border-left: 4px solid white;
+  margin-left: -1px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  outline: none;
+}
+
+.calendar .rbc-event:hover {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.calendar .rbc-header + .rbc-header {
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.calendar .rbc-header {
+  font-weight: 400;
+  color: #b3b3b3;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+
+
+/* MAPBOXXXX ^^^ */
+.react-mapbox-ac-menu {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  z-index: 9999;
+  background-color: #181818;
+  border: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+div .react-mapbox-ac-input {
+  width: 95%;
+}
+
+.react-mapbox-ac-input {
+  border: none transparent;
+  outline: none;
+  background: #181818;
+  color: white;
+  margin: auto;
+  padding: 7px;
+  border-radius: 7px;
+  height: 60px;
+}
+
+.react-mapbox-ac-suggestion {
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 1.5rem;
+  color: white;
+  padding-right: 1.5rem;
+}
+
+.react-mapbox-ac-input:hover {
+  background-color: #181818;
+}
+
+.react-mapbox-ac-input:focus {
+  background-color: #181818;
+  box-shadow: 0px;
+}
